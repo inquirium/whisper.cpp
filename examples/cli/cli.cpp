@@ -152,7 +152,7 @@ static bool whisper_params_parse(int argc, char ** argv, whisper_params & params
             exit(0);
         }
         if (arg == "--version") {
-            fprintf(stdout, "whisper.cpp version: %s\n", whisper_version());
+            fprintf(stdout, "whisper.cpp version: %s (inquirium)\n", whisper_version());
             exit(0);
         }
         #define ARGV_NEXT (((i + 1) < argc) ? argv[++i] : requires_value_error(arg))
